@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="convert.png"/>
+            <a href="#" class="nav-links-first">Length</a>
+            <a href="time.html" class="nav-links">Time</a> 
+            <a href="temperature.html" class="nav-links">Temperature</a>
+            <a href="weight.html"class="nav-links">Weight</a>
+        </nav>
+    </header>
+    <h2>Weight Convertor</h2>
+    <div class="content">
+        <input type="number" class="input-value"></input>
+        <div class="demo">
+            <div class="dropdown-container">
+              <select class="unit-values">
+                <option value="">Select The Unit</option>
+                <option value="kilogram">KiloGram</option>
+                <option value="gram">Gram</option>
+                <option value="pounds">Pounds</option>
+                <option value="ounce">Ounce</option>
+              </select>              
+            </div>
+        </div>    
+    </div>
+    <div class="content">
+        <table id="unit-convertor">
+            <thead>
+                <tr>
+                    <th>Unit</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>KiloGram</td>
+                    <td class="kilogram"></td>
+                </tr>
+                <tr>
+                    <td>Gram</td>
+                    <td class="gram"></td>
+                </tr>
+                <tr>
+                    <td>Ounce</td>
+                    <td class="ounce"></td>
+                </tr>
+                <tr>
+                    <td>Pounds</td>
+                    <td class="pounds"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="weight.js"></script>
+</body>
+</html>

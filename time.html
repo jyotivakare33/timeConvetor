@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="convert.png"/>
+            <a href="#" class="nav-links-first">Length</a>
+            <a href="time.html" class="nav-links">Time</a> 
+            <a href="temperature.html" class="nav-links">Temperature</a>
+            <a href="weight.html"class="nav-links">Weight</a>
+        </nav>
+    </header>
+    <h2>Unit Convertor</h2>
+    <div class="content">
+        <input type="number" class="input-value"></input>
+        <div class="demo">
+            <div class="dropdown-container">
+              <select class="unit-values">
+                <option value="">Select The Unit</option>
+                <option value="hour">Hour</option>
+                <option value="minute">Minute</option>
+                <option value="seconds">Seconds</option>
+                <option value="milliseconds">MilliSeconds</option>
+                <option value="microseconds">MicroSeconds</option>
+                <option value="nanoseconds">NanoSeconds</option>
+                <option value="day">Day</option>
+                <option value="month">Month</option>
+                <option value="year">Year</option>
+              </select>              
+            </div>
+        </div>    
+    </div>
+    <div class="content">
+        <table id="unit-convertor">
+            <thead>
+                <tr>
+                    <th>Unit</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hour</td>
+                    <td class="hour"></td>
+                </tr>
+                <tr>
+                    <td>Minute</td>
+                    <td class="minute"></td>
+                </tr>
+                <tr>
+                    <td>Seconds</td>
+                    <td class="seconds"></td>
+                </tr>
+                <tr>
+                    <td>MilliSeconds</td>
+                    <td class="milliseconds"></td>
+                </tr>
+                <tr>
+                    <td>MicroSeconds</td>
+                    <td class="microseconds"></td>
+                </tr>
+                <tr>
+                    <td>NanoSeconds</td>
+                    <td class="nanoseconds"></td>
+                </tr>
+                <tr>
+                    <td>Day</td>
+                    <td class="day"></td>
+                </tr>
+                <tr>
+                    <td>Month</td>
+                    <td class="month"></td>
+                </tr>
+                <tr>
+                    <td>Year</td>
+                    <td class="year"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
